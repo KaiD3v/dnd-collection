@@ -19,7 +19,7 @@ export default function NavBar() {
     <nav className={styles.nav}>
       <div className={styles.logo__container}>
         <div className={styles.nav__mobile__content}>
-          <IoMdMenu size={40}/>
+          <IoMdMenu size={40} />
         </div>
         <h2>
           <Link href="/">
@@ -48,7 +48,16 @@ export default function NavBar() {
         </form>
       </div>
       <div className={styles.nav__mobile__content}>
-        <CgSearch onClick={handleOpenSearch} />
+        <CgSearch
+          className={searchOpened ? styles.inactive : ""}
+          onClick={handleOpenSearch}
+        />
+        <form className={searchOpened ? styles.active : styles.inactive}>
+          <div>
+            <CgSearch onClick={handleOpenSearch} className={searchOpened ? "" : styles.inactive} />
+            <input type="text" />
+          </div>
+        </form>
       </div>
     </nav>
   );
