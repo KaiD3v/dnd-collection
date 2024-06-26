@@ -106,8 +106,13 @@
     display: none;
   }
 
+  .nav .logo__container {
+    gap: .5rem;
+  }
+
   .nav .nav__mobile__content {
-    display: block;
+    display: flex;
+    gap: 2rem;
     font-size: 2.5rem;
   }
 }

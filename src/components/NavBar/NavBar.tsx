@@ -18,9 +18,12 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo__container}>
+        <div className={styles.nav__mobile__content}>
+          <IoMdMenu size={40}/>
+        </div>
         <h2>
           <Link href="/">
-            <SiDungeonsanddragons /> D&D <b>Collection</b>
+            D&D <b>Collection</b> <SiDungeonsanddragons />
           </Link>
         </h2>
       </div>
