@@ -41,7 +41,7 @@ export default function NavBar() {
             ? styles.visible
             : ""}`}
         >
-          <div>
+          <div className={styles.search__container}>
             <CgSearch />
             <input type="text" placeholder="Search" />
           </div>
@@ -54,7 +54,10 @@ export default function NavBar() {
         />
         <form className={searchOpened ? styles.active : styles.inactive}>
           <div>
-            <CgSearch onClick={handleOpenSearch} className={searchOpened ? "" : styles.inactive} />
+            <CgSearch
+              onClick={handleOpenSearch}
+              className={searchOpened ? "" : styles.inactive}
+            />
             <input type="text" />
           </div>
         </form>
