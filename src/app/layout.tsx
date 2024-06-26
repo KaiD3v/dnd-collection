@@ -1,3 +1,6 @@
+import NavBar from "../components/NavBar/NavBar";
+import './globals.css'
+
 export const metadata = {
   title: "D&D Collection Br",
   description:
@@ -12,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+        <NavBar />
         {children}
       </body>
     </html>
