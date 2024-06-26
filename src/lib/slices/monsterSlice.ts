@@ -47,7 +47,7 @@ const monsterSlice = createSlice({
       .addCase(getAllMonsters.fulfilled, (state, action: PayloadAction<any>) => {
         state.loading = false;
         state.success = true;
-        state.monsters = action.payload.results;
+        state.monsters = action.payload;
       })
       .addCase(getAllMonsters.rejected, (state, action:any) => {
         state.loading = false;
