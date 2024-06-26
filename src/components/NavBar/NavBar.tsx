@@ -1,17 +1,22 @@
 "use client";
 
-import { useEffect } from "react";
 import styles from "./NavBar.module.css";
 import { SiDungeonsanddragons } from "react-icons/si";
 import Link from "next/link";
 import { CgSearch } from "react-icons/cg";
+import { IoMdMenu } from "react-icons/io";
 
 export default function NavBar() {
   return (
     <nav className={styles.nav}>
+      <div className={styles.nav__mobile__content}>
+        <IoMdMenu />
+      </div>
       <div className={styles.logo__container}>
         <h2>
-          <SiDungeonsanddragons /> D&D <b>Collection</b>
+          <Link href={"/"}>
+            <SiDungeonsanddragons /> D&D <b>Collection</b>
+          </Link>
         </h2>
       </div>
       <div className={styles.nav__content__container}>
@@ -20,7 +25,7 @@ export default function NavBar() {
             <Link href={"/"}>Docs</Link>
           </li>
           <li>
-            <Link href={"/"}>Github</Link>
+            <a href="https://github.com/KaiD3v/dnd-collection">Github</a>
           </li>
         </ul>
         <form className={styles.search__form}>
