@@ -58,22 +58,28 @@
 .nav .search__form {
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  background-color: #626060;
+  border: none;
+  border-radius: 2rem;
   margin-right: 1rem;
-  padding: 0.5rem;
 }
 
 .nav .search__form input {
   border: none;
+  background: none;
   outline: none;
-  padding: 0.5rem;
-  border-radius: 5px;
+  margin-bottom: .5rem;
+  color: black;
 }
 
 .nav .search__form svg {
-  color: #2d2d2d;
-  margin-right: 0.5rem;
+  color: white;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  font-size: 1.5rem;
+  align-items: center;
 }
 
 /* Media Queries */
@@ -96,14 +102,6 @@
 }
 
 @media screen and (max-width: 431px) {
-  .nav {
-    gap: .2rem;
-  }
-
-  .nav .logo__container {
-    font-size: 1rem;
-  }
-
   .nav .nav__content__container {
     display: none;
   }

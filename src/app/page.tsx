@@ -1,8 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import styles from "./page.module.css";
-import { api } from "../api/api.config";
 
 export default function Home() {
   // const [monsters, setMonsters] = useState<any[]>([]);
@@ -31,7 +27,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-    <h1>Home Page</h1>
+      <h1>Home Page</h1>
     </main>
   );
 }
